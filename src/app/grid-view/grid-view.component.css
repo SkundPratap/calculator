@@ -1,0 +1,44 @@
+.heading
+{
+    
+    text-align: center;
+}
+
+td.levels
+{
+    color: blue;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.atp
+{
+    content: '$';
+}
+
+td.percentage
+{
+    text-align: center;
+
+}
+td.override
+{
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+}
+td.agentcount
+{
+    text-align: center;
+}
+
+#agentcount
+{
+    padding-left: 5px; 
+    margin-left: 15px;
+}
+
+.card
+{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
