@@ -1,3 +1,5 @@
+    
+
 <div class= "container heading" style="margin-top: 5%;">
     <h1>NihaLife <span style="font-weight: lighter;">|</span> Potential Income Calculator</h1>
 </div>
@@ -15,7 +17,7 @@
             <input class="col atp" type="number" placeholder="Amount" id="atp" [(ngModel)]="annualTargetPremium">
         </div>
         </div>
-        <div class="col-3"> <h4 style="margin-top: 5px; color: green;">$ {{annualTargetPremium * 0.8 | number :'1.2-3'}}</h4></div>
+        <div class="col-3"> <h4 style="margin-top: 5px; text-align: center; color: green;">$ {{annualTargetPremium * 0.8 | number :'1.2-3'}}</h4></div>
     </div>
     </div>
     <div class="card-body">
@@ -39,7 +41,7 @@
                     <td>
                         <div class="input-group">
                             <span class="input-group-text" style="size: 3px;">$</span>
-                            <input class="col atp" type="number" placeholder="Annual Target Premium" [(ngModel)]="atp1">
+                            <input class="col atp" type="number" placeholder="Annual Target Premium" min="0"  [(ngModel)]="atp1">
                         </div>
                     </td>
                     <td class="percentage">17.5%</td>
@@ -53,7 +55,7 @@
                     <td>
                         <div class="input-group">
                             <span class="input-group-text" style="size: 3px;">$</span>
-                            <input class="col atp" type="number" placeholder="Annual Target Premium" [(ngModel)]="atp2">
+                            <input class="col atp" type="number" placeholder="Annual Target Premium" min="0"  [(ngModel)]="atp2">
                         </div>
                     </td>
                     <td class="percentage">20%</td>
@@ -67,7 +69,7 @@
                     <td>
                         <div class="input-group">
                             <span class="input-group-text" style="size: 3px;">$</span>
-                            <input class="col atp" type="number" placeholder="Annual Target Premium" [(ngModel)]="atp3" >
+                            <input class="col atp" type="number" placeholder="Annual Target Premium" min="0" [(ngModel)]="atp3" >
                         </div>
                     </td>
                     <td class="percentage">12.5%</td>
@@ -81,7 +83,7 @@
                     <td>
                         <div class="input-group">
                             <span class="input-group-text" style="size: 3px;">$</span>
-                            <input class="col atp" type="number" placeholder="Annual Target Premium" [(ngModel)]="atp4" >
+                            <input class="col atp" type="number" placeholder="Annual Target Premium"  min="0" [(ngModel)]="atp4" >
                         </div>
                     </td>
                     <td class="percentage">7.5%</td>
@@ -95,7 +97,7 @@
                     <td>
                         <div class="input-group">
                             <span class="input-group-text" style="size: 3px;">$</span>
-                            <input class="col atp" type="number" placeholder="Annual Target Premium" [(ngModel)]="atp5">
+                            <input class="col atp" type="number" placeholder="Annual Target Premium"  min="0"  [(ngModel)]="atp5">
                         </div>
                     </td>
                     <td class="percentage">10%</td>
@@ -123,7 +125,7 @@
                     <td>
                         <div class="input-group">
                             <span class="input-group-text" style="size: 3px;">$</span>
-                            <input class="col atp" type="number" placeholder="Annual Target Premium" [(ngModel)]="atp7">
+                            <input class="col atp" type="number" placeholder="Annual Target Premium"  min="0" [(ngModel)]="atp7">
                         </div>
                     </td>
                     <td class="percentage">20%</td>
@@ -135,10 +137,9 @@
     <div class="card-footer">
       <div class="row footer">
           <div class="col-9" style="text-align: center;"><h4 style="color: green;">Grand total is</h4></div>
-          <div class="col-3"><h4 style="color: green;">${{ (((atp1 * agentcount1) * 0.2) * 0.175) + (((atp2 * agentcount2) * 0.2) * 0.2) + (((atp3 * agentcount3) * 0.2) * 0.125 ) + (((atp4 * agentcount4) * 0.2) * 0.075) + (((atp5 * agentcount5) * 0.2) * 0.1) + (((atp6 * agentcount6) * 0.2) * 0.125) + (((atp7 * agentcount7) * 0.2) * 0.2) | number :'1.2-3' }}</h4></div>
+          <div class="col-3"><h4 style="color: green; text-align: center; margin-right: 5px;">${{ (((atp1 * agentcount1) * 0.2) * 0.175) + (((atp2 * agentcount2) * 0.2) * 0.2) + (((atp3 * agentcount3) * 0.2) * 0.125 ) + (((atp4 * agentcount4) * 0.2) * 0.075) + (((atp5 * agentcount5) * 0.2) * 0.1) + (((atp6 * agentcount6) * 0.2) * 0.125) + (((atp7 * agentcount7) * 0.2) * 0.2) | number :'1.2-3' }}</h4></div>
       </div>
     </div>
 </div>
-
 
 

@@ -26,6 +26,7 @@ td.override
     font-weight: 500;
     font-size: large;
     text-align: center;
+    color: green;
 }
 td.agentcount
 {
@@ -41,4 +42,5 @@ td.agentcount
 .card
 {
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
